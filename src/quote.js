@@ -9,12 +9,12 @@ renderQuote(){
     let quoteBox = document.getElementById("quote")
     quote.innerHTML +=
     `${this.quote}`
-}
-
-renderCharacter(){
+    
     let charBox = document.getElementById("character")
     character.innerHTML +=
     `${this.character}`
-}
 
-}
+    let episodeBox = document.getElementById("episode")
+    episode.innerHTML +=
+    `${this.episode}`
+}}

@@ -10,8 +10,7 @@ const BASE_URL = ("http://127.0.0.1:3000/")
     fetch(`${BASE_URL}/users`)
     .then(resp => resp.json())
     .then(users => {
-        // console.log(users)
-        // const user = users()
+
         u = new User(user.username)
         u.renderUser()
 
@@ -23,7 +22,7 @@ const BASE_URL = ("http://127.0.0.1:3000/")
         .then(resp => resp.json())
         .then(quotes => {
       // This for random quote setup
-          const quote = quotes[Math.floor(Math.random() * quotes.length)]
+        const quote = quotes[Math.floor(Math.random() * quotes.length)]
         u = new Quote(quote.quote)
         u.renderQuote()
     })
