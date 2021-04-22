@@ -1,19 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
     fetchUsers()
+    fetchQuotes()
 })
 
 const BASE_URL = ("http://127.0.0.1:3000/")
 
-
+// fetch users index (read)
     function fetchUsers(){
-    fetch(`${BASE_URL}/quotes`)
+    fetch(`${BASE_URL}/users`)
     .then(resp => resp.json())
     .then(users => {
-        console.log(users)
+        // console.log(users)
+        // const user = users()
+        u = new User(user.username)
+        u.renderUser()
 
     })
     }
-
+// fetch quotes index
     function fetchQuotes(){
         fetch(`${BASE_URL}/quotes`)
         .then(resp => resp.json())
