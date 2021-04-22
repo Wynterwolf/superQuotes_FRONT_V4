@@ -10,7 +10,6 @@ const BASE_URL = ("http://127.0.0.1:3000/")
     fetch(`${BASE_URL}/users`)
     .then(resp => resp.json())
     .then(users => {
-
         u = new User(user.username)
         u.renderUser()
 
