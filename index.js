@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     fetchUsers()
     fetchQuotes()
+    fetchCharacter()
 })
 
 const BASE_URL = ("http://127.0.0.1:3000/")
@@ -25,4 +26,13 @@ const BASE_URL = ("http://127.0.0.1:3000/")
         u = new Quote(quote.quote)
         u.renderQuote()
     })
+    }
+
+    function fetchCharacter(){
+        fetch(`${BASE_URL}/quotes`)
+        .then(resp => resp.json())
+        .then(characters => {
+            u = new Character(quote.character)
+            u.renderCharacter()
+        })
     }
