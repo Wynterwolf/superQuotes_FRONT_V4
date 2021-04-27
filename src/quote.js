@@ -12,7 +12,7 @@ renderQuote(){
     
     let charBox = document.getElementById("character")
     character.innerHTML +=
-    `${quote.character}`
+    `${this.character}`
 
     let episodeBox = document.getElementById("episode")
     episode.innerHTML +=
