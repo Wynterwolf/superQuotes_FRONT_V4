@@ -23,7 +23,7 @@ const BASE_URL = ("http://127.0.0.1:3000/")
         .then(quotes => {
       // This for random quote setup
         const quote = quotes[Math.floor(Math.random() * quotes.length)]
-        u = new Quote(quote.quote)
+        u = new Quote(quote.quote, quote.character, quote.episode)
         u.renderQuote()
     })
     }
