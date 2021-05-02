@@ -29,5 +29,8 @@ const BASE_URL = ("http://127.0.0.1:3000/")
     }
 
 document.getElementById("btn1").addEventListener("click", function(){
+    document.getElementById("quote").innerHTML = "Quote: ";
+    document.getElementById("character").innerHTML = "Character: ";
+    document.getElementById("episode").innerHTML = "Episode: ";
     fetchQuotes()
 })
