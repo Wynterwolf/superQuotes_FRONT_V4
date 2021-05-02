@@ -40,18 +40,19 @@
 
     <div>
         <form action="http://127.0.0.1:3000/quotes" method="post">
+            <% form_for (@quote), url: 
             <ul>
             <li>
                 <label for="quoteAdd">Quote: </label>
-                <textarea type="text" id="quoteAdd" name="quoteAdd"></textarea>
+                <textarea type="text" id="quoteAdd"></textarea>
             </li>
             <li>
                 <label for="character">Character: </label>
-                <input type="text" id="characterAdd" name="characterAdd">
+                <input type="text" id="characterAdd">
             </li>
             <li>
                 <label for="episode">Episode: </label>
-                <input type="text" id="episodeAdd" name="episodeAdd">
+                <input type="text" id="episodeAdd">
             </li>
             </ul>
             <input type="submit" value="Submit">
