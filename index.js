@@ -27,10 +27,14 @@ const BASE_URL = ("http://127.0.0.1:3000/")
         u.renderQuote()
     })
     }
-
+// resets otherwise splices quotes etc
 document.getElementById("btn1").addEventListener("click", function(){
     document.getElementById("quote").innerHTML = "Quote: ";
     document.getElementById("character").innerHTML = "Character: ";
     document.getElementById("episode").innerHTML = "Episode: ";
     fetchQuotes()
 })
+
+// for post
+
+//for delete
