@@ -26,17 +26,36 @@
     <hr>
 
     <div>
-    <h1><span id="quote">Quote: </span></h1></div>
-    <h3><span id="character">Character: </span></h3>
-    <h3><span id="episode">Episode: </span></h3>
-    <h4><span id="user">Contributed By: </span></h4>
+        <h1><span id="quote">Quote: </span></h1></div>
+        <h3><span id="character">Character: </span></h3>
+        <h3><span id="episode">Episode: </span></h3>
+        <h4><span id="user">Contributed By: </span></h4>
     </div>
 
     <div>
-    <!-- <a href="a" class="btn btn-default twitter">Twitter</a> -->
-    <button id="btn1" role="button">Random!</button>
-    <button id="btn2" role="button">Add Quote</button>
-    <button id="btn3" role="button">Delete Quote</button>
+        <!-- <a href="a" class="btn btn-default twitter">Twitter</a> -->
+        <button id="btn1" role="button">Random!</button>
+        <button id="btn3" role="button">Delete Quote</button>
+    </div>
+
+    <div>
+        <form action="http://127.0.0.1:3000/quotes" method="post">
+            <ul>
+            <li>
+                <label for="quoteAdd">Quote: </label>
+                <textarea type="text" id="quoteAdd" name="quoteAdd"></textarea>
+            </li>
+            <li>
+                <label for="character">Character: </label>
+                <input type="text" id="characterAdd" name="characterAdd">
+            </li>
+            <li>
+                <label for="episode">Episode: </label>
+                <input type="text" id="episodeAdd" name="episodeAdd">
+            </li>
+            </ul>
+            <input type="submit" value="Submit">
+        </form>
     </div>
 
 </body>
