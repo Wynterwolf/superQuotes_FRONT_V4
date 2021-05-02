@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const BASE_URL = ("http://127.0.0.1:3000/")
 
-// fetch users index (read)
+// fetch users index 
     function fetchUsers(){
     fetch(`${BASE_URL}/users`)
     .then(resp => resp.json())
@@ -28,3 +28,6 @@ const BASE_URL = ("http://127.0.0.1:3000/")
     })
     }
 
+document.getElementById("btn1").addEventListener("click", function(){
+    fetchQuotes()
+})
